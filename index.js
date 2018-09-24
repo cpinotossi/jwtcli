@@ -20,16 +20,12 @@ if (typeof commander.key === 'undefined' ||typeof commander.payload === 'undefin
 
 //Read key from file
 var fs = require("fs");
-console.log("\n *START* \n");
 var jwtPrivateKey = fs.readFileSync(commander.key);
-console.log("Key : \n"+ jwtPrivateKey);
 
 //Read Json payload from file
 var fs = require("fs");
-console.log("\n *START* \n");
 var jwtPayloadRaw = fs.readFileSync(commander.payload);
 var jwtPayload = JSON.parse(jwtPayloadRaw, null, 4);
-console.log("jwt Payload : \n"+ jwtPayload);
 
 //Define jwt alg to be used:
 var jwtHeader = {
