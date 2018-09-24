@@ -1,0 +1,26 @@
+{
+  "name": "jwtcli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cpinotossi/jwtcli.git"
+  },
+  "author": "Christian Pino Tossi <cpinotossi@web.de> (http://edgegate.de)",
+  "license": "ISC",
+  "bin": {
+    "jwtcli": "./index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/cpinotossi/jwtcli/issues"
+  },
+  "homepage": "https://github.com/cpinotossi/jwtcli#readme",
+  "dependencies": {
+    "commander": "^2.18.0",
+    "jwt-simple": "^0.5.3"
+  }
+}
